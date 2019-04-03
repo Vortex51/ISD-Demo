@@ -13,7 +13,7 @@
     </head>
     <body style="background-color: lightblue">
         <h1>Register</h1>
-       <form>
+       <form action="action.jsp" method="post">
             <table>
                 <tr>
                     <td>Email:</td>
