@@ -12,6 +12,23 @@
         <title>Register Complete</title>
     </head>
     <body style="background-color: lightblue">
-        <h1>Welcome!</h1>
+        <%
+            String name = request.getParameter("name");
+            String email = request.getParameter("email");
+            String password = request.getParameter("password");
+            String gender = request.getParameter("gender");
+            String favcol = request.getParameter("favcol");
+            String tos = request.getParameter("tos");
+        %>
+        <%if (tos != null) {%>
+            <p>Welcome!, <%=name%>!</p>
+            <p>Your email is: <%=email%>!</p>
+            <p>Your Password is: <%=password%>!</p>
+            <p>Your gender is: <%=gender%>!</p>
+            <p>Your favourite colour is: <%=favcol%>!</p>
+        <%} else {%>
+            <p>Please agree to the TOS before continuing</p>
+            <p>Click <a href="register.jsp">Here</a> to return to the register page.</p>
+        <%  }%>
     </body>
 </html>

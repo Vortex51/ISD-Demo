@@ -39,7 +39,7 @@
                 <tr>
                     <td>Favourite Colour: </td>
                     <td>
-                        <select>
+                        <select name="favcol">
                             <option value = "red">Red</option>
                             <option value = "green">Green</option>
                             <option value = "blue">Blue</option>
